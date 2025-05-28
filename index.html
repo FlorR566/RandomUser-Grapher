@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="src/faceDog.jpg" />
+    <title>Dark Mode | Api Data</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="headerSection">
+        <h1 class="header_title">API Data</h1>
+        <button id="theme-toggle" class="theme-toggle">
+          <img id="day-mode" class="" src="src/day-mode.png" alt="day mode" />
+          <img
+            id="moon-mode"
+            class="hidden"
+            src="src/moon-mode.png"
+            alt="moon
+          mode"
+          />
+        </button>
+      </header>
+
+      <section class="fetchSection">
+        <button id="fetchData">Get User Data</button>
+        <ul class="data-list" id="dataList"></ul>
+      </section>
+
+      <!-- <section class="formulario">
+        <button id="openDialog">Show Information</button>
+
+        <dialog id="myDialog" closedby="any">
+          <h2>Welcome to API DATA</h2>
+          <p>
+            This app visualizes the gender distribution in randomly generated
+            user data from an API.
+          </p>
+          <form method="dialog">
+            <button>Close</button>
+          </form>
+        </dialog>
+      </section> -->
+
+      <section class="chartSection">
+        <button id="getChart">Open Chart</button>
+        <button id="closeChart" class="hidden">Close Chart</button>
+        <button id="btnRefresh" class="hidden">Refresh Chart</button>
+        <canvas id="myChart" class="hidden"></canvas>
+      </section>
+
+      <footer class="footerSection">
+        <p class="footer__copyright">
+          &copy; Copyright by
+          <a
+            class="footer__link GitHub-link"
+            target="_blank"
+            href="https://github.com/FlorR566"
+            >Florencia Rodriguez</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
