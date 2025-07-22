@@ -1,0 +1,174 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Tema claro (por defecto) */
+:root {
+  --background-color: white;
+  --color-secondary: #f1f1f1;
+  --color-tertiary: #dbe4ff;
+  --background-chart-color: #d0f3f3;
+  --text-color: #444;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.28);
+}
+/* Tema oscuro */
+[data-theme='dark'] {
+  --background-color: #121212;
+  --color-secondary: #242323;
+  --color-tertiary: #1d3c3a;
+  --background-chart-color: #c9baba;
+  --text-color: #f1f1f1;
+  --box-shadow: 0 2px 4px rgb(94, 93, 149);
+}
+/* Aplicamos las variables */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 50vh;
+}
+/* Header */
+.headerSection {
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__title {
+  font-size: 40px;
+  line-height: 1.35;
+}
+/* Estilos botón dark-mode */
+.theme-toggle {
+  background: #91a7ff;
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: #91a7ff;
+}
+.theme-toggle:hover {
+  background: #637fef;
+}
+#day-mode {
+  width: 30px;
+  height: 30px;
+}
+#moon-mode {
+  width: 30px;
+  height: 30px;
+}
+.hidden {
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.subtitle {
+  font-size: 15px;
+  line-height: 1.35;
+}
+/* Cuerpo */
+.container {
+  color: var(--text-color);
+  background-color: var(--color-secondary);
+  box-shadow: var(--box-shadow);
+  border-radius: 8px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 100%;
+  max-width: 800px;
+  height: 775px;
+}
+/* Estilos para botones */
+button {
+  background: #91a7ff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+button:hover {
+  background: #748ffc;
+}
+/*Estilo contenedor de datos*/
+.fetchSection {
+  padding-top: 30px;
+  max-height: 290px;
+  min-height: 290px;
+}
+/* Estilos para listas de datos */
+.data-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  min-height: 263.5px;
+}
+.data-item {
+  background-color: var(--color-tertiary);
+  box-shadow: var(--box-shadow);
+  border-radius: 6px;
+  min-height: 200px;
+  max-height: 200px;
+  padding: 10px 10px;
+}
+/* Estilos para imagen */
+.imgPerson {
+  border-radius: 6px;
+  display: block;
+  margin: auto;
+  min-height: 128px;
+}
+/* Estilos para los datos de la persona */
+.listContainer {
+  margin-top: 20px;
+  margin-left: 25px;
+  max-width: 325px;
+}
+p {
+  width: 300px;
+  text-align: left;
+}
+/* Estilo para Chart */
+.chartSection {
+  block-size: auto;
+  max-height: 310px;
+  min-height: 310px;
+}
+#myChart {
+  background-color: var(--background-chart-color);
+  box-shadow: var(--box-shadow);
+  max-width: 70%;
+  max-height: 250px;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 115px;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+.footerSection {
+  width: 100%;
+  height: 40px;
+  padding-top: 20px;
+  font-size: 12px;
+}
+.footer__link {
+  color: var(--text-color);
+  text-decoration: none;
+}
