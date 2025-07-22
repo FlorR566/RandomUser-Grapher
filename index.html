@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/png" href="src/faceDog.jpg" />
-    <title>Dark Mode | Api Data</title>
+    <title>RandomUser Explorer</title>
     <link rel="stylesheet" href="styles.css" />
 
     <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -13,7 +13,7 @@
   <body>
     <div class="container">
       <header class="headerSection">
-        <h1 class="header_title">API Data</h1>
+        <h1 class="header_title">RandomUser Explorer</h1>
         <button id="theme-toggle" class="theme-toggle">
           <img id="day-mode" class="" src="src/day-mode.png" alt="day mode" />
           <img
@@ -26,30 +26,16 @@
         </button>
       </header>
 
+      <h3 class="subtitle">View random user data with a single click 😎</h3>
       <section class="fetchSection">
-        <button id="fetchData">Get User Data</button>
+        <button id="fetchData">1 - Get Data</button>
         <ul class="data-list" id="dataList"></ul>
       </section>
 
-      <!-- <section class="formulario">
-        <button id="openDialog">Show Information</button>
-
-        <dialog id="myDialog" closedby="any">
-          <h2>Welcome to API DATA</h2>
-          <p>
-            This app visualizes the gender distribution in randomly generated
-            user data from an API.
-          </p>
-          <form method="dialog">
-            <button>Close</button>
-          </form>
-        </dialog>
-      </section> -->
-
       <section class="chartSection">
-        <button id="getChart">Open Chart</button>
-        <button id="closeChart" class="hidden">Close Chart</button>
-        <button id="btnRefresh" class="hidden">Refresh Chart</button>
+        <button id="getChart">2 - Open Chart</button>
+        <button id="closeChart" class="hidden">2 - Close Chart</button>
+        <button id="btnRefresh" class="hidden">3 - Refresh Chart</button>
         <canvas id="myChart" class="hidden"></canvas>
       </section>
 
@@ -60,7 +46,7 @@
             class="footer__link GitHub-link"
             target="_blank"
             href="https://github.com/FlorR566"
-            >Florencia Rodriguez</a
+            >Florencia Rodriguez 🐝</a
           >
         </p>
       </footer>
