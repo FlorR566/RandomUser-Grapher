@@ -56,9 +56,10 @@ const NewChart = function () {
     type: 'bar',
     data: {
       labels: ['Female', 'Men'],
+
       datasets: [
         {
-          label: 'Gender Distribution in API',
+          label: 'Gender Distribution',
           data: [female.length, men.length],
           backgroundColor: [
             'rgba(255, 99, 132, 0.6)',
@@ -142,16 +143,3 @@ btnClose.addEventListener('click', function () {
 btnRefresh.addEventListener('click', function () {
   NewChart();
 });
-
-/* // **Evento para abrir el diálogo**
-openButton.addEventListener('click', () => {
-  dialog.showModal(); // Muestra el modal en el centro de la pantalla
-});
-
-// Opcional: Cerrar el modal diálogo si se hace clic fuera de él
-dialog.addEventListener('click', event => {
-  if (event.target === dialog) {
-    dialog.close();
-  }
-});
-*/
