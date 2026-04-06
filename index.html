@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -9,6 +9,7 @@
 
     <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script defer src="script.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body>
     <div class="container">
@@ -20,22 +21,33 @@
             id="moon-mode"
             class="hidden"
             src="src/moon-mode.png"
-            alt="moon
-          mode"
+            alt="moon mode"
           />
         </button>
       </header>
 
       <h3 class="subtitle">View random user data with a single click 😎</h3>
       <section class="fetchSection">
-        <button id="fetchData">1 - Get Data</button>
+        <button id="fetchData">
+          <i data-lucide="user-round-search"></i>
+          Get Data
+        </button>
         <ul class="data-list" id="dataList"></ul>
       </section>
 
       <section class="chartSection">
-        <button id="getChart">2 - Open Chart</button>
-        <button id="closeChart" class="hidden">2 - Close Chart</button>
-        <button id="btnRefresh" class="hidden">3 - Refresh Chart</button>
+        <button id="getChart">
+          <i data-lucide="bar-chart-2"></i>
+          Open Chart
+        </button>
+        <button id="closeChart" class="hidden">
+          <i data-lucide="x"></i>
+          Close Chart
+        </button>
+        <button id="btnRefresh" class="hidden">
+          <i data-lucide="refresh-cw"></i>
+          Refresh Chart
+        </button>
         <canvas id="myChart" class="hidden"></canvas>
       </section>
 
@@ -43,13 +55,18 @@
         <p class="footer__copyright">
           &copy; Copyright by
           <a
-            class="footer__link GitHub-link"
+            class="footer__link"
             target="_blank"
             href="https://github.com/FlorR566"
-            >Florencia Rodriguez 🐝</a
           >
+            Florencia Rodriguez 🐝
+          </a>
         </p>
       </footer>
     </div>
+
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
